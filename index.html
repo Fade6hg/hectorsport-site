@@ -80,6 +80,41 @@
             color: #111;
             transform: translateY(-4px);
         }
+
+        /* Contact Section */
+        .contact {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 2;
+        }
+
+        .contact p {
+            color: #ccc;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        .social-links a {
+            color: #e0e0e0;
+            font-size: 2.4rem;
+            transition: all 0.3s ease;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        .social-links a:hover {
+            color: #ffcc00;
+            transform: translateY(-4px);
+        }
     </style>
 </head>
 <body>
@@ -90,8 +125,18 @@
             <p class="subtitle">Premium Quad Cortex presets engineered for tone chasers who demand the best.</p>
             <a href="presets.html" class="btn">View Preset Packs</a>
         </div>
+
+        <!-- Contact / Social Links -->
+        <div class="contact">
+            <p>Get in Touch</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/hectorsport/" target="_blank" title="Instagram">📷</a>
+                <a href="mailto:hectorsport@icloud.com" title="Email">✉️</a>
+            </div>
+        </div>
     </section>
 
 </body>
 </html>
- 
+
+    
