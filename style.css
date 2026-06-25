@@ -9,7 +9,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     min-height: 100vh;
     font-family: Arial, sans-serif;
 }
