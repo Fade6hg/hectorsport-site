@@ -31,7 +31,7 @@
         }
 
         .content {
-            padding: 100px 20px;
+            padding: 100px 20px 80px;
             max-width: 1400px;
             margin: 0 auto;
             position: relative;
@@ -102,6 +102,36 @@
         }
 
         .back-btn:hover { color: #ffcc00; }
+
+        /* Contact Section - Added to bottom */
+        .contact {
+            text-align: center;
+            padding: 80px 20px 60px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .contact p {
+            color: #ccc;
+            margin-bottom: 25px;
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .social-links a {
+            color: #e0e0e0;
+            font-size: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffcc00;
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body>
@@ -142,5 +172,15 @@
         </div>
     </div>
 
+    <!-- Contact Section on Second Page -->
+    <section class="contact">
+        <p>Get in Touch</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/hectorsport/" target="_blank" title="Instagram">📷</a>
+            <a href="mailto:hectorsport@icloud.com" title="Email">✉️</a>
+        </div>
+    </section>
+
 </body>
 </html>
+ 
