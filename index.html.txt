@@ -14,7 +14,7 @@
         }
 
         body {
-            background-image: url('IMG_1386.jpg'); /* ← Change to your new image */
+            background-image: url('IMG_1386.jpg'); /* ← Change this to your new background image */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -143,7 +143,7 @@
             transform: scale(1.05);
         }
 
-        /* New: Contact / Social Section */
+        /* Contact / Social Section */
         .contact {
             padding: 100px 20px;
             background: rgba(10, 10, 10, 0.98);
@@ -153,20 +153,21 @@
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 40px;
             flex-wrap: wrap;
             margin-top: 30px;
         }
 
         .social-links a {
             color: #e0e0e0;
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             transition: all 0.3s ease;
+            text-decoration: none;
         }
 
         .social-links a:hover {
             color: #ffcc00;
-            transform: translateY(-4px);
+            transform: translateY(-5px);
         }
 
         footer {
@@ -226,7 +227,7 @@
         </div>
     </section>
 
-    <!-- New Contact / Social Section -->
+    <!-- Contact / Social Section -->
     <section class="contact">
         <h2 class="section-title">Get in Touch</h2>
         <p style="max-width: 600px; margin: 0 auto 40px; font-size: 1.2rem; color: #ccc;">
@@ -234,10 +235,8 @@
         </p>
         
         <div class="social-links">
-            <a href="https://instagram.com/yourusername" target="_blank" title="Instagram">📷</a>
-            <a href="https://youtube.com/@yourchannel" target="_blank" title="YouTube">▶️</a>
-            <a href="https://x.com/yourusername" target="_blank" title="X / Twitter">𝕏</a>
-            <a href="mailto:your@email.com" title="Email">✉️</a>
+            <a href="https://www.instagram.com/hectorsport/" target="_blank" title="Instagram">📷</a>
+            <a href="mailto:hectorsport@icloud.com" title="Email">✉️</a>
         </div>
     </section>
 
@@ -247,3 +246,7 @@
 
 </body>
 </html>
+          
+    
+      
+    
