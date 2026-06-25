@@ -62,9 +62,13 @@
             backdrop-filter: blur(6px);
         }
 
+        /* White blurry glow on hover */
         .card:hover {
             transform: translateY(-10px);
             background: rgba(20, 20, 20, 0.9);
+            border-color: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5), 
+                        0 0 40px rgba(255, 255, 255, 0.3);
         }
 
         .card h2 { font-size: 1.65rem; margin-bottom: 12px; }
@@ -130,6 +134,15 @@
         .social-links a:hover {
             color: #ffcc00;
             transform: translateY(-5px);
+        }
+
+        /* Mobile */
+        @media (max-width: 992px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
