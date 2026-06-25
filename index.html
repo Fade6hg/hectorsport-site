@@ -32,13 +32,13 @@
         }
 
         .hero {
-            min-height: 100vh;
+            min-height: 85vh;                    /* Reduced height */
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
             position: relative;
-            padding: 80px 20px 120px;
+            padding: 60px 20px 40px;            /* Less bottom padding */
         }
 
         .hero-content {
@@ -82,19 +82,19 @@
             transform: translateY(-4px);
         }
 
-        /* Testimonials Section */
+        /* Testimonials - Moved much closer */
         .testimonials {
             position: relative;
             z-index: 2;
             max-width: 1100px;
-            margin: 0 auto;
-            padding: 60px 20px 80px;
+            margin: -60px auto 0;           /* Negative margin pulls it up */
+            padding: 40px 20px 80px;
         }
 
         .testimonials-title {
             text-align: center;
             font-size: 2.2rem;
-            margin-bottom: 50px;
+            margin-bottom: 45px;
             text-shadow: 0 3px 12px rgba(0,0,0,0.8);
         }
 
@@ -169,24 +169,24 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials Section - Now much closer -->
     <section class="testimonials">
         <h2 class="testimonials-title">What Artists Are Saying</h2>
         
         <div class="quotes-grid">
             <div class="quote-card">
                 <p class="quote-text">"Hector's presets are the best I've used on the Quad Cortex. They feel alive and cut through the mix perfectly."</p>
-                <p class="quote-author">— Artist Name 1</p>
+                <p class="quote-author">— Michael Jackson Martinez 1</p>
             </div>
 
             <div class="quote-card">
                 <p class="quote-text">"Incredible tones. The Lead Pack is now a permanent part of my rig. Highly recommend!"</p>
-                <p class="quote-author">— Artist Name 2</p>
+                <p class="quote-author">— YOUR MOM 2</p>
             </div>
 
             <div class="quote-card">
                 <p class="quote-text">"Finally found presets that actually feel like real amps. The cleans are absolutely stunning."</p>
-                <p class="quote-author">— Artist Name 3</p>
+                <p class="quote-author">— Your other mom 3</p>
             </div>
         </div>
     </section>
