@@ -110,6 +110,25 @@
             padding: 35px 25px;
             border-radius: 8px;
             backdrop-filter: blur(6px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* Hover Effect */
+        .quote-card:hover {
+            transform: translateY(-8px);
+            background: rgba(25, 25, 25, 0.85);
+            border-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Active State (when clicked) */
+        .quote-card:active {
+            transform: scale(0.97);
+            background: rgba(30, 30, 30, 0.95);
+            border-color: #ffffff;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 
+                        0 0 45px rgba(255, 255, 255, 0.35);
         }
 
         .quote-text {
@@ -125,55 +144,13 @@
             font-weight: 600;
         }
 
-        /* ================== MOBILE FRIENDLY ================== */
+        /* Mobile */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 3.2rem;
-            }
-            
-            .subtitle {
-                font-size: 1.15rem;
-                margin-bottom: 40px;
-            }
-            
-            .btn {
-                padding: 16px 40px;
-                font-size: 1.1rem;
-            }
-
-            .hero {
-                min-height: 80vh;
-                padding: 40px 15px 30px;
-            }
-
-            .testimonials {
-                margin: -30px auto 0;
-                padding: 30px 15px 80px;
-            }
-
-            .testimonials-title {
-                font-size: 1.9rem;
-                margin-bottom: 35px;
-            }
-
-            .quotes-grid {
-                grid-template-columns: 1fr;   /* Stack quotes vertically on mobile */
-                gap: 25px;
-            }
-
-            .quote-card {
-                padding: 25px 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2.8rem;
-            }
-            
-            .hero {
-                min-height: 75vh;
-            }
+            h1 { font-size: 3.2rem; }
+            .subtitle { font-size: 1.15rem; }
+            .hero { min-height: 80vh; padding: 40px 15px 30px; }
+            .testimonials { margin: -30px auto 0; padding: 30px 15px 80px; }
+            .quotes-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
