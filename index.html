@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hector Sport|Quad Cortex Presets</title>
+    <title>Hector Sport | Quad Cortex Presets</title>
     <meta name="description" content="High-quality Quad Cortex presets for live performance and studio recording.">
     
     <style>
@@ -16,7 +16,7 @@
         body {
             background-image: url('IMG_1386.jpg');
             background-size: cover;
-            background-position: center top;     /* Changed - shows more top area */
+            background-position: center top;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-color: #0a0a0a;
@@ -58,6 +58,8 @@
             margin-bottom: 12px;
             font-weight: 700;
             letter-spacing: -2px;
+            color: #f0f0f0;           /* Less bright than pure white */
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);   /* Soft shadow for depth */
         }
 
         .subtitle {
@@ -103,18 +105,18 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);   /* Forces 4 cards in one row */
+            grid-template-columns: repeat(4, 1fr);
             gap: 24px;
         }
 
         .card {
             background: #111;
             border: 1px solid #333;
-            padding: 28px 20px;           /* Smaller padding */
+            padding: 28px 20px;
             text-align: center;
             border-radius: 8px;
             transition: all 0.4s ease;
-            font-size: 0.95rem;           /* Slightly smaller text */
+            font-size: 0.95rem;
         }
 
         .card:hover {
@@ -190,17 +192,12 @@
             font-size: 0.95rem;
         }
 
-        /* Mobile - Stack cards when screen is small */
         @media (max-width: 992px) {
-            .grid {
-                grid-template-columns: repeat(2, 1fr);   /* 2 per row on tablets */
-            }
+            .grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 600px) {
-            .grid {
-                grid-template-columns: 1fr;   /* Stack on mobile */
-            }
+            .grid { grid-template-columns: 1fr; }
             h1 { font-size: 3.2rem; }
             body { background-attachment: scroll; }
         }
@@ -268,6 +265,4 @@
 
 </body>
 </html>
-    
- 
- 
+  
