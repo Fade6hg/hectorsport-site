@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hector Sport | Quad Cortex Presets</title>
+    <title>Hector Sport|Quad Cortex Presets</title>
     <meta name="description" content="High-quality Quad Cortex presets for live performance and studio recording.">
     
     <style>
@@ -16,7 +16,7 @@
         body {
             background-image: url('IMG_1386.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: center top;     /* Changed - shows more top area */
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-color: #0a0a0a;
@@ -88,8 +88,8 @@
         }
 
         .products {
-            padding: 120px 20px 100px;
-            max-width: 1200px;
+            padding: 100px 20px;
+            max-width: 1400px;
             margin: 0 auto;
             background: rgba(10, 10, 10, 0.97);
         }
@@ -97,56 +97,59 @@
         .section-title {
             text-align: center;
             font-size: 2.8rem;
-            margin-bottom: 70px;
+            margin-bottom: 60px;
             font-weight: 600;
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(4, 1fr);   /* Forces 4 cards in one row */
+            gap: 24px;
         }
 
         .card {
             background: #111;
             border: 1px solid #333;
-            padding: 40px 30px;
+            padding: 28px 20px;           /* Smaller padding */
             text-align: center;
             border-radius: 8px;
             transition: all 0.4s ease;
+            font-size: 0.95rem;           /* Slightly smaller text */
         }
 
         .card:hover {
-            transform: translateY(-12px);
+            transform: translateY(-10px);
             border-color: #555;
         }
 
         .card h2 {
-            font-size: 1.85rem;
-            margin-bottom: 16px;
+            font-size: 1.65rem;
+            margin-bottom: 12px;
         }
 
         .card p {
             color: #bbbbbb;
-            margin-bottom: 28px;
-            min-height: 48px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            min-height: 60px;
         }
 
         .price {
-            font-size: 2.4rem;
+            font-size: 2.1rem;
             font-weight: 700;
-            margin: 20px 0;
+            margin: 18px 0;
             color: #fff;
         }
 
         .buy-btn {
             display: inline-block;
-            padding: 14px 36px;
+            padding: 12px 28px;
             background: #ffffff;
             color: #111;
             text-decoration: none;
             font-weight: 600;
             border-radius: 6px;
+            font-size: 0.95rem;
             transition: all 0.3s ease;
         }
 
@@ -187,9 +190,18 @@
             font-size: 0.95rem;
         }
 
-        @media (max-width: 768px) {
+        /* Mobile - Stack cards when screen is small */
+        @media (max-width: 992px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);   /* 2 per row on tablets */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;   /* Stack on mobile */
+            }
             h1 { font-size: 3.2rem; }
-            .subtitle { font-size: 1.2rem; }
             body { background-attachment: scroll; }
         }
     </style>
@@ -212,28 +224,28 @@
                 <h2>Cleans Pack</h2>
                 <p>Beautiful ambient cleans, edge-of-breakup, and sparkling jangly tones.</p>
                 <div class="price">$19.99</div>
-                <a href="#" class="buy-btn">Purchase Cleans Pack</a>
+                <a href="#" class="buy-btn">Purchase</a>
             </div>
 
             <div class="card">
                 <h2>Dirty Pack</h2>
                 <p>Modern high-gain, rhythm crunch, and dynamic driven tones.</p>
                 <div class="price">$19.99</div>
-                <a href="#" class="buy-btn">Purchase Dirty Pack</a>
+                <a href="#" class="buy-btn">Purchase</a>
             </div>
 
             <div class="card">
                 <h2>Lead Pack</h2>
                 <p>Singing leads with sustain, clarity, and professional polish.</p>
                 <div class="price">$19.99</div>
-                <a href="#" class="buy-btn">Purchase Lead Pack</a>
+                <a href="#" class="buy-btn">Purchase</a>
             </div>
 
             <div class="card">
                 <h2>Complete Collection</h2>
                 <p>All three packs + bonus tones. Best value.</p>
                 <div class="price">$45.99</div>
-                <a href="#" class="buy-btn">Purchase Complete Collection</a>
+                <a href="#" class="buy-btn">Purchase</a>
             </div>
         </div>
     </section>
@@ -256,3 +268,6 @@
 
 </body>
 </html>
+    
+ 
+ 
