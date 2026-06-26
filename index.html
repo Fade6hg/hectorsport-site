@@ -12,7 +12,7 @@
         body {
             background-image: url('IMG_1386.jpg');
             background-size: cover;
-            background-position: center top;
+            background-position: center 25%;     /* Adjusted to show more of your face */
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-color: #0a0a0a;
@@ -27,7 +27,7 @@
             position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.55);
+            background: rgba(0, 0, 0, 0.52);   /* Slightly lighter overlay */
             z-index: -1;
         }
 
@@ -114,7 +114,6 @@
             cursor: pointer;
         }
 
-        /* Hover Effect */
         .quote-card:hover {
             transform: translateY(-8px);
             background: rgba(25, 25, 25, 0.85);
@@ -122,13 +121,11 @@
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
         }
 
-        /* Active State (when clicked) */
         .quote-card:active {
             transform: scale(0.97);
             background: rgba(30, 30, 30, 0.95);
             border-color: #ffffff;
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 
-                        0 0 45px rgba(255, 255, 255, 0.35);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
         }
 
         .quote-text {
@@ -144,13 +141,50 @@
             font-weight: 600;
         }
 
-        /* Mobile */
+        /* ==================== MOBILE OPTIMIZATIONS ==================== */
         @media (max-width: 768px) {
-            h1 { font-size: 3.2rem; }
-            .subtitle { font-size: 1.15rem; }
-            .hero { min-height: 80vh; padding: 40px 15px 30px; }
-            .testimonials { margin: -30px auto 0; padding: 30px 15px 80px; }
-            .quotes-grid { grid-template-columns: 1fr; }
+            body {
+                background-attachment: scroll;           /* Better performance on mobile */
+                background-position: center 30%;         /* Slightly lower for mobile */
+            }
+
+            h1 {
+                font-size: 3.1rem;
+            }
+            
+            .subtitle {
+                font-size: 1.15rem;
+                margin-bottom: 40px;
+            }
+            
+            .btn {
+                padding: 16px 40px;
+                font-size: 1.1rem;
+            }
+
+            .hero {
+                min-height: 78vh;
+                padding: 40px 15px 30px;
+            }
+
+            .testimonials {
+                margin: -30px auto 0;
+                padding: 30px 15px 80px;
+            }
+
+            .testimonials-title {
+                font-size: 1.9rem;
+            }
+
+            .quotes-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2.7rem; }
+            .hero { min-height: 75vh; }
         }
     </style>
 </head>
@@ -170,17 +204,17 @@
         
         <div class="quotes-grid">
             <div class="quote-card">
-                <p class="quote-text">"BLAH BLAH BLAH."</p>
+                <p class="quote-text">"Hector's presets are the best I've used on the Quad Cortex. They feel alive and cut through the mix perfectly."</p>
                 <p class="quote-author">— Artist Name 1</p>
             </div>
 
             <div class="quote-card">
-                <p class="quote-text">"BLAH BLAH BLAH. Highly recommend!"</p>
+                <p class="quote-text">"Incredible tones. The Lead Pack is now a permanent part of my rig. Highly recommend!"</p>
                 <p class="quote-author">— Artist Name 2</p>
             </div>
 
             <div class="quote-card">
-                <p class="quote-text">"BLAH BLAH BLAH. The cleans are absolutely stunning."</p>
+                <p class="quote-text">"Finally found presets that actually feel like real amps. The cleans are absolutely stunning."</p>
                 <p class="quote-author">— Artist Name 3</p>
             </div>
         </div>
