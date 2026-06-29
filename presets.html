@@ -43,117 +43,56 @@
             font-size: 2.8rem;
             margin-bottom: 60px;
             font-weight: 600;
-            text-shadow: 0 3px 12px rgba(0, 0, 0, 0.8);
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
         }
 
         .card {
-            background: rgba(20, 20, 20, 0.8);
+            background: rgba(20, 20, 20, 0.85);
             border: 1px solid rgba(255,255,255,0.15);
-            padding: 28px 20px;
+            padding: 30px 20px;
             text-align: center;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(6px);
-            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.4s ease;
         }
 
-        /* Hover Effect */
         .card:hover {
             transform: translateY(-10px);
-            background: rgba(20, 20, 20, 0.9);
-            border-color: rgba(255, 255, 255, 0.6);
-            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5), 
-                        0 0 40px rgba(255, 255, 255, 0.3);
+            background: rgba(25, 25, 25, 0.9);
         }
-
-        /* Active State (when clicked/held) */
-        .card:active {
-            transform: scale(0.96);
-            background: rgba(30, 30, 30, 0.95);
-            border-color: #ffffff;
-            box-shadow: 0 0 35px rgba(255, 255, 255, 0.7), 
-                        0 0 50px rgba(255, 255, 255, 0.4);
-        }
-
-        .card h2 { font-size: 1.65rem; margin-bottom: 12px; }
-        .card p { color: #cccccc; margin-bottom: 20px; font-size: 0.95rem; min-height: 60px; }
 
         .price {
-            font-size: 2.1rem;
-            font-weight: 700;
-            margin: 18px 0;
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin: 20px 0;
             color: #fff;
         }
 
         .buy-btn {
-            display: inline-block;
-            padding: 12px 28px;
-            background: #ffffff;
-            color: #111;
+            background: #635BFF;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            border-radius: 6px;
-            font-size: 0.95rem;
+            display: inline-block;
             transition: all 0.3s ease;
         }
 
         .buy-btn:hover {
-            background: #ddd;
+            background: #4f4aff;
             transform: scale(1.05);
         }
 
         .back-btn {
-            display: inline-block;
-            margin-bottom: 40px;
-            color: #fff;
+            color: white;
             text-decoration: none;
-            font-size: 1.1rem;
-        }
-
-        .back-btn:hover { color: #ffcc00; }
-
-        /* Contact Section */
-        .contact {
-            text-align: center;
-            padding: 80px 20px 60px;
-        }
-
-        .contact p {
-            color: #ccc;
-            margin-bottom: 25px;
-            font-size: 1.2rem;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        .social-links a {
-            color: #e0e0e0;
-            font-size: 2.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: #ffcc00;
-            transform: translateY(-5px);
-        }
-
-        /* Mobile */
-        @media (max-width: 992px) {
-            .grid { grid-template-columns: repeat(2, 1fr); }
-        }
-
-        @media (max-width: 600px) {
-            .grid { grid-template-columns: 1fr; }
+            margin-bottom: 40px;
+            display: inline-block;
         }
     </style>
 </head>
@@ -169,40 +108,31 @@
                 <h2>Cleans Pack</h2>
                 <p>Beautiful ambient cleans, edge-of-breakup, and sparkling jangly tones.</p>
                 <div class="price">$19.99</div>
-                <a href="#" class="buy-btn">Purchase</a>
+                <a href="https://buy.stripe.com/4gM7sL2LY2w13oK4bk5sA00" class="buy-btn">Buy Now</a>
             </div>
 
             <div class="card">
                 <h2>Dirty Pack</h2>
                 <p>Modern high-gain, rhythm crunch, and dynamic driven tones.</p>
                 <div class="price">$19.99</div>
-                <a href="#" class="buy-btn">Purchase</a>
+                <a href="#" class="buy-btn">Buy Now</a>
             </div>
 
             <div class="card">
                 <h2>Lead Pack</h2>
                 <p>Singing leads with sustain, clarity, and professional polish.</p>
                 <div class="price">$19.99</div>
-                <a href="#" class="buy-btn">Purchase</a>
+                <a href="#" class="buy-btn">Buy Now</a>
             </div>
 
             <div class="card">
                 <h2>Complete Collection</h2>
                 <p>All three packs + bonus tones. Best value.</p>
                 <div class="price">$45.99</div>
-                <a href="#" class="buy-btn">Purchase</a>
+                <a href="#" class="buy-btn">Buy Now</a>
             </div>
         </div>
     </div>
-
-    <!-- Contact Section -->
-    <section class="contact">
-        <p>Get in Touch</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/hectorsport/" target="_blank" title="Instagram">📷</a>
-            <a href="mailto:hectorsport@icloud.com" title="Email">✉️</a>
-        </div>
-    </section>
 
 </body>
 </html>
