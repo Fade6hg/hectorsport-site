@@ -4,120 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hector Sport | Quad Cortex Presets</title>
-    
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <style>
+        :root {
+            --gold: #e8d5a3;
+        }
+        
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Inter', system-ui, sans-serif;
             color: #e8e8e8;
-            background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.96)), 
-                        url('IMG_1386.jpg') center 25% / cover no-repeat fixed;
+            background: linear-gradient(rgba(8,8,8,0.88), rgba(8,8,8,0.96)), 
+                        url('IMG_1386.jpg') center 28% / cover no-repeat fixed;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
+            line-height: 1.6;
         }
         
         .container {
-            max-width: 920px;
+            max-width: 960px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 80px 20px 120px;
             text-align: center;
         }
         
         h1 {
             font-family: 'Cinzel', serif;
-            font-size: 5.2rem;
-            font-weight: 700;
-            letter-spacing: -2px;
+            font-size: 5.8rem;
+            letter-spacing: -3px;
             color: #f5f0e6;
-            margin-bottom: 12px;
-            text-shadow: 0 4px 25px rgba(0,0,0,0.9);
+            margin-bottom: 10px;
+            text-shadow: 0 6px 30px rgba(0,0,0,0.9);
         }
         
         .subtitle {
-            font-family: 'Inter', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 500;
-            color: #f0f0f0;
-            letter-spacing: 4px;
-            margin-bottom: 50px;
+            font-size: 1.65rem;
+            color: var(--gold);
+            letter-spacing: 5px;
+            margin-bottom: 60px;
         }
         
-        .description {
-            font-size: 1.28rem;
+        .tagline {
+            font-size: 1.35rem;
             max-width: 680px;
-            margin: 0 auto 50px;
-            line-height: 1.6;
-            color: #e0e0e0;
+            margin: 0 auto 70px;
+            color: #ddd;
         }
         
         .btn {
             background: transparent;
-            color: #f0f0f0;
-            border: 2px solid #f0f0f0;
-            padding: 16px 52px;
-            font-size: 1.2rem;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+            padding: 18px 60px;
+            font-size: 1.25rem;
             font-weight: 600;
             text-decoration: none;
-            transition: all 0.4s;
-            margin: 20px;
+            transition: all 0.4s ease;
+            display: inline-block;
+            margin: 15px;
         }
         
         .btn:hover {
-            background: #f0f0f0;
+            background: var(--gold);
             color: #111;
+            transform: translateY(-3px);
         }
 
+        .section {
+            margin: 100px 0;
+        }
+        
         .quotes {
-            margin: 70px 0;
+            max-width: 720px;
+            margin: 0 auto;
         }
         
         .quote {
-            background: rgba(255,255,255,0.08);
-            padding: 28px;
-            border-radius: 8px;
-            margin-bottom: 25px;
+            background: rgba(255,255,255,0.07);
+            padding: 32px;
+            border-radius: 12px;
+            margin-bottom: 30px;
             font-style: italic;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .artists {
-            margin-top: 60px;
-        }
-        
-        .artists h2 {
-            font-family: 'Cinzel', serif;
-            color: #f0f0f0;
-            margin-bottom: 15px;
-            font-size: 1.8rem;
+            text-align: left;
         }
         
         .dropdown {
             background: rgba(255,255,255,0.08);
-            padding: 18px 25px;
-            border-radius: 8px;
+            padding: 22px 30px;
+            border-radius: 12px;
             cursor: pointer;
             text-align: left;
-            max-width: 700px;
+            max-width: 720px;
             margin: 0 auto;
         }
         
         .artist-list {
             display: none;
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-            gap: 12px;
-            font-size: 1.1rem;
+            margin-top: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            font-size: 1.15rem;
         }
         
         .dropdown.active .artist-list {
             display: grid;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #888;
+            font-size: 0.95rem;
         }
     </style>
 </head>
@@ -125,15 +125,14 @@
     <div class="container">
         <h1>Hector Sport</h1>
         <p class="subtitle">QUAD CORTEX PRESETS</p>
+        <p class="tagline">Premium tones engineered for guitarists who chase perfection.</p>
         
-        <p class="description">
-            Premium presets engineered for tone chasers who demand the best.
-        </p>
-        
-        <a href="presets.html" class="btn">VIEW PRESET PACKS</a>
+        <a href="presets.html" class="btn">BROWSE PRESET PACKS</a>
 
-        <!-- Quotes -->
-        <div class="quotes">
+        <!-- Testimonials -->
+        <div class="section quotes">
+            <h2 style="margin-bottom: 40px; color: #f5f0e6; font-family: 'Cinzel', serif;">What Artists Are Saying</h2>
+            
             <div class="quote">
                 "Hector's presets are the best I've used on the Quad Cortex. They feel alive and cut through the mix perfectly."
                 <br><strong>— Artist Name 1</strong>
@@ -148,25 +147,25 @@
             </div>
         </div>
 
-        <!-- Artists Dropdown -->
-        <div class="artists">
+        <!-- Artists -->
+        <div class="section">
             <div class="dropdown" onclick="this.classList.toggle('active')">
-                <h2>▼ ARTISTS I'VE WORKED WITH</h2>
+                <h2 style="color: #f5f0e6; font-family: 'Cinzel', serif;">▼ ARTISTS I'VE WORKED WITH</h2>
                 <div class="artist-list">
-                    <div>Artist Name 1</div>
-                    <div>Artist Name 2</div>
-                    <div>Artist Name 3</div>
-                    <div>Artist Name 4</div>
-                    <div>Artist Name 5</div>
-                    <!-- Add more artists here -->
+                    <div>Artist 1</div>
+                    <div>Artist 2</div>
+                    <div>Artist 3</div>
+                    <div>Artist 4</div>
+                    <div>Artist 5</div>
+                    <div>Artist 6</div>
+                    <!-- Add all your real artists here -->
                 </div>
             </div>
         </div>
     </div>
 
-    <footer style="position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); color: #aaa; font-size: 0.95rem;">
-        © Hector Sport • All Rights Reserved
+    <footer>
+        © 2026 Hector Sport • All Rights Reserved
     </footer>
 </body>
 </html>
-  
