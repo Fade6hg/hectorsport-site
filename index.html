@@ -4,157 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hector Sport | Quad Cortex Presets</title>
-    <meta name="description" content="Premium Quad Cortex presets.">
-    
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
-            background-image: url('IMG_1386.jpg');
-            background-size: cover;
-            background-position: center 15%;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-color: #0a0a0a;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f;
             color: #e0e0e0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            min-height: 100vh;
             line-height: 1.6;
         }
-
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.52);
-            z-index: -1;
-        }
-
-        .hero {
-            min-height: 85vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            padding: 60px 20px 40px;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
+        .container {
             max-width: 900px;
             margin: 0 auto;
+            padding: 40px 20px;
         }
-
         h1 {
-            font-size: 4.5rem;
-            margin-bottom: 12px;
-            font-weight: 700;
-            letter-spacing: -2px;
-            color: #f0f0f0;
-            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+            font-size: 3rem;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 10px;
         }
-
         .subtitle {
-            font-size: 1.4rem;
-            color: #dddddd;
-            margin-bottom: 50px;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            font-size: 1.3rem;
+            color: #aaa;
+            margin-bottom: 40px;
         }
-
         .btn {
             display: inline-block;
-            padding: 18px 50px;
-            border: 2px solid #ffffff;
+            background-color: #ff4d4d;
             color: white;
+            padding: 14px 32px;
+            font-size: 1.1rem;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 1.2rem;
-            border-radius: 6px;
-            transition: all 0.4s ease;
-        }
-
-        .btn:hover {
-            background: white;
-            color: #111;
-            transform: translateY(-4px);
-        }
-
-        .testimonials {
-            position: relative;
-            z-index: 2;
-            max-width: 1100px;
-            margin: -60px auto 0;
-            padding: 40px 20px 100px;
-        }
-
-        .testimonials-title {
-            text-align: center;
-            font-size: 2.2rem;
-            margin-bottom: 45px;
-            text-shadow: 0 3px 12px rgba(0,0,0,0.8);
-        }
-
-        .quotes-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        .quote-card {
-            background: rgba(20, 20, 20, 0.75);
-            border: 1px solid rgba(255,255,255,0.15);
-            padding: 35px 25px;
             border-radius: 8px;
-            backdrop-filter: blur(6px);
-            transition: all 0.3s ease;
-            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+            width: fit-content;
+            font-weight: bold;
         }
-
-        .quote-card:hover {
-            transform: translateY(-8px);
-            background: rgba(25, 25, 25, 0.85);
-            border-color: rgba(255, 255, 255, 0.5);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        .btn:hover {
+            background-color: #ff6666;
+            transform: translateY(-2px);
         }
-
-        .quote-card:active {
-            transform: scale(0.97);
-            background: rgba(30, 30, 30, 0.95);
-            border-color: #ffffff;
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+        .testimonials {
+            margin-top: 60px;
+        }
+        .quote {
+            background-color: #1a1a1a;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border-left: 5px solid #ff4d4d;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Hector Sport</h1>
+        <p class="subtitle">Premium Quad Cortex Presets</p>
+        <p style="text-align: center; font-size: 1.2rem; max-width: 700px; margin: 0 auto 40px;">
+            Engineered for tone chasers who demand the best.
+        </p>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hector Sport</h1>
-            <p class="subtitle">Premium Quad Cortex presets engineered for tone chasers who demand the best.</p>
-            <a href="presets.html" class="btn">View Preset Packs</a>
+        <a href="presets.html" class="btn">View Preset Packs</a>
+
+        <div class="testimonials">
+            <h2 style="text-align: center; color: #fff;">What Artists Are Saying</h2>
+            
+            <div class="quote">
+                <p>"Hector's presets are the best I've used on the Quad Cortex. They feel alive and cut through the mix perfectly."</p>
+                <p style="margin-top: 15px; color: #aaa;">— Artist Name 1</p>
+            </div>
+            
+            <div class="quote">
+                <p>"Incredible tones. The Lead Pack is now a permanent part of my rig. Highly recommend!"</p>
+                <p style="margin-top: 15px; color: #aaa;">— Artist Name 2</p>
+            </div>
+            
+            <div class="quote">
+                <p>"Finally found presets that actually feel like real amps. The cleans are absolutely stunning."</p>
+                <p style="margin-top: 15px; color: #aaa;">— Artist Name 3</p>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <section class="testimonials">
-        <h2 class="testimonials-title">What Artists Are Saying</h2>
-        <div class="quotes-grid">
-            <div class="quote-card">
-                <p class="quote-text">"Hector's presets are the best I've used on the Quad Cortex. They feel alive and cut through the mix perfectly."</p>
-                <p class="quote-author">— Artist Name 1</p>
-            </div>
-            <div class="quote-card">
-                <p class="quote-text">"Incredible tones. The Lead Pack is now a permanent part of my rig. Highly recommend!"</p>
-                <p class="quote-author">— Artist Name 2</p>
-            </div>
-            <div class="quote-card">
-                <p class="quote-text">"Finally found presets that actually feel like real amps. The cleans are absolutely stunning."</p>
-                <p class="quote-author">— Artist Name 3</p>
-            </div>
-        </div>
-    </section>
-
+    <footer>
+        &copy; Hector Sport • All Rights Reserved
+    </footer>
 </body>
 </html>
