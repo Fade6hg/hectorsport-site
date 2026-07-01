@@ -5,74 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hector Sport | Quad Cortex Presets</title>
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
             font-family: 'Inter', system-ui, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #0a0a0a;
             color: #e0e0e0;
-            line-height: 1.6;
+            min-height: 100vh;
+            background: linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.9)), 
+                        url('IMG_1386.jpg') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
         }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
         h1 {
             font-family: 'Oswald', Impact, sans-serif;
-            font-size: 4.5rem;
+            font-size: 5.5rem;
             font-weight: 700;
-            letter-spacing: -2px;
+            letter-spacing: -3px;
             color: #ffffff;
-            text-align: center;
-            margin-bottom: 8px;
             text-transform: uppercase;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 25px rgba(0,0,0,0.9);
         }
+        
         .subtitle {
-            font-family: 'Oswald', Impact, sans-serif;
-            text-align: center;
-            font-size: 1.6rem;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.9rem;
             color: #ff4d4d;
-            margin-bottom: 50px;
-            letter-spacing: 4px;
+            letter-spacing: 6px;
+            margin-bottom: 40px;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 20px;
+        
+        .description {
+            font-size: 1.35rem;
+            max-width: 720px;
+            margin: 0 auto 50px;
         }
+        
         .btn {
-            display: inline-block;
             background-color: #ff4d4d;
             color: white;
-            padding: 16px 40px;
-            font-size: 1.2rem;
+            padding: 18px 50px;
+            font-size: 1.3rem;
             font-weight: 600;
             text-decoration: none;
-            border-radius: 8px;
-            margin: 30px auto;
-            display: block;
-            width: fit-content;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 20px;
             transition: all 0.3s;
         }
+        
         .btn:hover {
-            background-color: #ff6666;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(255, 77, 77, 0.3);
+            background-color: #ff3333;
+            transform: scale(1.08);
         }
-        .testimonials {
-            margin-top: 70px;
-        }
-        .quote {
-            background-color: #1a1a1a;
-            padding: 30px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            border-left: 6px solid #ff4d4d;
-        }
+        
         footer {
-            text-align: center;
-            padding: 50px 20px;
-            color: #555;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #aaa;
             font-size: 0.95rem;
         }
     </style>
@@ -81,35 +84,15 @@
     <div class="container">
         <h1>Hector Sport</h1>
         <p class="subtitle">QUAD CORTEX PRESETS</p>
-        
-        <p style="text-align: center; font-size: 1.25rem; max-width: 700px; margin: 0 auto 40px;">
+        <p class="description">
             Premium presets engineered for tone chasers who demand the best.
         </p>
-
+        
         <a href="presets.html" class="btn">VIEW PRESET PACKS</a>
-
-        <div class="testimonials">
-            <h2 style="text-align: center; color: #fff; font-family: 'Oswald', sans-serif;">WHAT ARTISTS ARE SAYING</h2>
-            
-            <div class="quote">
-                <p>"Hector's presets are the best I've used on the Quad Cortex. They feel alive and cut through the mix perfectly."</p>
-                <p style="margin-top: 15px; color: #aaa;">— Artist Name 1</p>
-            </div>
-            
-            <div class="quote">
-                <p>"Incredible tones. The Lead Pack is now a permanent part of my rig. Highly recommend!"</p>
-                <p style="margin-top: 15px; color: #aaa;">— Artist Name 2</p>
-            </div>
-            
-            <div class="quote">
-                <p>"Finally found presets that actually feel like real amps. The cleans are absolutely stunning."</p>
-                <p style="margin-top: 15px; color: #aaa;">— Artist Name 3</p>
-            </div>
-        </div>
     </div>
 
     <footer>
-        © 2026 Hector Sport • All Rights Reserved
+        © Hector Sport • All Rights Reserved
     </footer>
 </body>
 </html>
