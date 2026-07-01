@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hector Sport | Quad Cortex Presets</title>
     
-    <!-- Better fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Inter', system-ui, sans-serif;
-            color: #ddd;
-            background: linear-gradient(rgba(10,10,10,0.82), rgba(10,10,10,0.95)), 
+            color: #e8e8e8;
+            background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.96)), 
                         url('IMG_1386.jpg') center 25% / cover no-repeat fixed;
             min-height: 100vh;
             display: flex;
@@ -29,68 +28,96 @@
         }
         
         h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4.6rem;
+            font-family: 'Cinzel', serif;
+            font-size: 5.2rem;
             font-weight: 700;
-            letter-spacing: -1px;
-            color: #ffffff;
+            letter-spacing: -2px;
+            color: #f5f0e6;
             margin-bottom: 12px;
-            text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+            text-shadow: 0 4px 25px rgba(0,0,0,0.9);
         }
         
         .subtitle {
             font-family: 'Inter', sans-serif;
-            font-size: 1.55rem;
+            font-size: 1.6rem;
             font-weight: 500;
-            color: #d4af37;
-            letter-spacing: 3px;
+            color: #f0f0f0;
+            letter-spacing: 4px;
             margin-bottom: 50px;
         }
         
         .description {
             font-size: 1.28rem;
             max-width: 680px;
-            margin: 0 auto 60px;
+            margin: 0 auto 50px;
             line-height: 1.6;
+            color: #e0e0e0;
         }
         
         .btn {
             background: transparent;
-            color: #d4af37;
-            border: 2px solid #d4af37;
+            color: #f0f0f0;
+            border: 2px solid #f0f0f0;
             padding: 16px 52px;
             font-size: 1.2rem;
             font-weight: 600;
             text-decoration: none;
             transition: all 0.4s;
+            margin: 20px;
         }
         
         .btn:hover {
-            background: #d4af37;
+            background: #f0f0f0;
             color: #111;
         }
 
-        .artists {
-            margin-top: 90px;
-            text-align: left;
+        .quotes {
+            margin: 70px 0;
+        }
+        
+        .quote {
+            background: rgba(255,255,255,0.08);
+            padding: 28px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-style: italic;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
+
+        .artists {
+            margin-top: 60px;
+        }
         
         .artists h2 {
-            font-family: 'Playfair Display', serif;
-            color: #d4af37;
-            margin-bottom: 25px;
-            text-align: center;
+            font-family: 'Cinzel', serif;
+            color: #f0f0f0;
+            margin-bottom: 15px;
             font-size: 1.8rem;
         }
         
+        .dropdown {
+            background: rgba(255,255,255,0.08);
+            padding: 18px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
         .artist-list {
+            display: none;
+            margin-top: 20px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-            gap: 14px;
+            gap: 12px;
             font-size: 1.1rem;
+        }
+        
+        .dropdown.active .artist-list {
+            display: grid;
         }
     </style>
 </head>
@@ -105,19 +132,39 @@
         
         <a href="presets.html" class="btn">VIEW PRESET PACKS</a>
 
+        <!-- Quotes -->
+        <div class="quotes">
+            <div class="quote">
+                "Hector's presets are the best I've used on the Quad Cortex. They feel alive and cut through the mix perfectly."
+                <br><strong>— Artist Name 1</strong>
+            </div>
+            <div class="quote">
+                "Incredible tones. The Lead Pack is now a permanent part of my rig. Highly recommend!"
+                <br><strong>— Artist Name 2</strong>
+            </div>
+            <div class="quote">
+                "Finally found presets that actually feel like real amps. The cleans are absolutely stunning."
+                <br><strong>— Artist Name 3</strong>
+            </div>
+        </div>
+
+        <!-- Artists Dropdown -->
         <div class="artists">
-            <h2>ARTISTS I'VE WORKED WITH</h2>
-            <div class="artist-list">
-                <div>Artist Name 1</div>
-                <div>Artist Name 2</div>
-                <div>Artist Name 3</div>
-                <div>Artist Name 4</div>
-                <!-- Add more artists here -->
+            <div class="dropdown" onclick="this.classList.toggle('active')">
+                <h2>▼ ARTISTS I'VE WORKED WITH</h2>
+                <div class="artist-list">
+                    <div>Artist Name 1</div>
+                    <div>Artist Name 2</div>
+                    <div>Artist Name 3</div>
+                    <div>Artist Name 4</div>
+                    <div>Artist Name 5</div>
+                    <!-- Add more artists here -->
+                </div>
             </div>
         </div>
     </div>
 
-    <footer style="position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); color: #777; font-size: 0.95rem;">
+    <footer style="position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); color: #aaa; font-size: 0.95rem;">
         © Hector Sport • All Rights Reserved
     </footer>
 </body>
