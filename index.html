@@ -14,9 +14,20 @@
         body {
             font-family: 'Inter', system-ui, sans-serif;
             color: #e8e8e8;
-            background: linear-gradient(rgba(8,8,8,0.85), rgba(8,8,8,0.97)), 
-                        url('IMG_1386.jpg') left 35% / cover no-repeat fixed; /* Significantly moved to the left */
+            background: linear-gradient(rgba(8,8,8,0.78), rgba(8,8,8,0.92)), 
+                        url('IMG_1386.jpg') left 35% / cover no-repeat fixed;
             min-height: 100vh;
+            background-color: #111; /* fallback */
+        }
+        
+        /* Make background image 10% brighter */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: inherit;
+            filter: brightness(1.1); /* 10% brighter */
+            z-index: -1;
         }
         
         .container {
@@ -24,6 +35,8 @@
             margin: 0 auto;
             padding: 80px 20px 140px;
             text-align: center;
+            position: relative;
+            z-index: 1;
         }
         
         h1 {
